@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <title>Orders</title>
+</head>
+<body>
+    <nav>
+        <img src="logotwilight.png">
+        <ul>
+           <li><a href="indexp.html">Home</a></li> 
+           <li><a href="about.html">Books</a></li>
+           <li><a href="registration.html">Register/Login</a></li>
+            <li><a href="orderp.html">Order Now</a></li>
+           <li><a href="orderss.html">Orders</a></li>
+        </ul>
+    </nav>
+
+    <h2>All Orders</h2>
+
+    <table id="ordersTbl">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Book</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        <!-- Orders will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <!-- START: Modals -->
+    <div id="editModal" class="modal">
+        <!-- Edit modal content -->
+    </div>
+  
+    <div id="removeModal" class="modal">
+        <!-- Remove modal content -->
+    </div>
+
+    <footer>
+        <span>&copy; <span id="currentYear"></span> Book Store. All rights reserved.</span>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>

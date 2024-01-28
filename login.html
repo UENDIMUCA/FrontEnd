@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Include necessary meta tags, title, and CSS files -->
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <nav>
+        <img src="logotwilight.png">
+        <ul>
+            <li><a href="indexp.html">Home</a></li>
+            <li><a href="about.html">Books</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="orderp.html">Order Now</a></li>
+            
+        </ul>
+    </nav>
+</head>
+
+<body>
+    <!-- Your navigation, header, and other HTML content -->
+
+    <div class="container input_container">
+        <form name="formLogin" id="formLogin" >
+            <h2 id="loginHeader">Login</h2>
+
+            <div class="input-row">
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="input-row">
+                <label for="password">Password:</label>
+                <input type="password" name="password" required>
+            </div>
+
+            <!-- Hidden input fields for order page URLs -->
+            <input type="hidden" name="orderPageUser" value="http://localhost/FrontEnd/orderp.html">
+            <input type="hidden" name="orderPageAdmin" value="http://localhost/FrontEnd/orderss.html">
+
+            <button type="submit" id="loginBtn">Login</button>
+
+            <div class="input-row">
+                <span id="loginResponse"></span>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="registration.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

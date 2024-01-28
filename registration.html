@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore our collection of books, including Twilight, New Moon, Eclipse, Breaking Dawn, Life and Death, and Midnight Sun.">
+    <meta name="keywords" content="books, Twilight, New Moon, Eclipse, Breaking Dawn, Life and Death, Midnight Sun">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <img src="logotwilight.png">
+        <ul>
+            <li><a href="indexp.html">Home</a></li>
+            <li><a href="about.html">Books</a></li>
+            <li><a href="registration.html">Register/Login</a></li>
+            <li><a href="orderp.html">Order Now</a></li>
+        </ul>
+    </nav>
+
+    <div class="container input_container">
+        <form name="formOrder" id="formOrder" action="../BackEnd/registration.php" method="POST">
+            <h2 id="registrationHeader">Registration</h2>
+            <div class="input-row">
+                <label for="username">Username:</label>
+                <input type="text" name="username" required>
+                <span id="usernamespn"></span>
+            </div>
+
+            <div class="input-row">
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+                <span id="emailspn"></span>
+            </div>
+
+            <div class="input-row">
+                <label for="password">Password:</label>
+                <input type="password" name="password" required>
+                <span id="passwordspn"></span>
+            </div>
+
+         
+
+            <button type="submit" id="submitBtn">Register</button>
+            <div class="input-row">
+                <span>Already have an account? <a href="login.html">Login here</a></span>
+            </div>
+        </form>
+       
+    </div>
+
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="registration.js"></script>
+
+</body>
+</html>
