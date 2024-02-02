@@ -18,7 +18,7 @@ $(document).ready(function () {
             }
         });
     }
-
+    
     // Function to display orders in the table
     function displayOrders(orders) {
         var ordersTableBody = $("#ordersTbl tbody");
@@ -32,8 +32,8 @@ $(document).ready(function () {
                 <td>${order.book}</td>
                 <td onclick="detectTextLanguage('${order.description}')">${order.description}</td>
                 <td>
-                    <button class="editBtn" data-order-id="${order.id}">Edit</button>
-                    <button class="removeBtn" data-order-id="${order.id}">Remove</button>
+                    <button class="editBtn" data-order-id="${order.ID}">Edit</button>
+                    <button class="removeBtn" data-order-id="${order.ID}">Remove</button>
                 </td>
             </tr>`;
             ordersTableBody.append(newRowHtml);
@@ -78,7 +78,7 @@ $(document).ready(function () {
         $.ajax({
             url: `../BackEnd/server.php?id=${orderId}`,
             type: 'PUT',
-            data: newData,
+            data: { id: orderId, ...newData },
             dataType: 'json',
             success: function (response) {
                 // If editing is successful, reload orders
